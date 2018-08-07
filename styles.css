@@ -3,30 +3,40 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: #FF0066;
   font-size: 18px;
   background-image: url('/Users/student/code/hrsf101-subclass-dance-party/images/pizza.png');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Monoton', cursive;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: black;
 }
+
+.topbar {
+  float: left;
+}
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: #66FF66;
 }
 .title{
-  background-color: #777;
+  background-color: #50BFE6;
 }
 .dancer{
   border:75px solid red;
   border-image: url('/Users/student/code/hrsf101-subclass-dance-party/images/pepperoni.png') 50% stretch;
   position:absolute;
+}
+
+.dancer:hover {
+  border-image: url('/Users/student/code/hrsf101-subclass-dance-party/images/boom.png') 50% stretch;
 }
 
 .blue-dancer{
@@ -35,8 +45,22 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.blue-dancer:hover {
+  border-image: url('/Users/student/code/hrsf101-subclass-dance-party/images/wow.png') 50% stretch;
+}
+
 .yellow-dancer{
   border:75px solid red;
   border-image: url('/Users/student/code/hrsf101-subclass-dance-party/images/pepper.png') 50% stretch;
   position:absolute;
 }
+
+.yellow-dancer:hover {
+  border-image: url('/Users/student/code/hrsf101-subclass-dance-party/images/bang.png') 50% stretch;
+}
+
+.GI{
+  padding:5px 12px;
+  float:right;
+}
+
