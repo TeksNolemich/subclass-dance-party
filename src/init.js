@@ -4,6 +4,8 @@ $(document).ready(function() {
   $('.addDancerButton').on('click', function(event) {
 
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    
+
 
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
@@ -12,6 +14,8 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    dancers.push(dancer);
+    console.log(dancers);
     $('body').append(dancer.$node);
   });
 });
