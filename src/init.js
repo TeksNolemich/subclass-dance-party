@@ -10,7 +10,8 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       Math.floor(Math.random() * $(window).height() - 150),
       Math.floor(Math.random() * $(window).width() - 200),
-      Math.random() * 1000
+      // Math.random() * 1000
+750
     );
 
     dancers.push(dancer);
@@ -32,8 +33,8 @@ $(document).ready(function() {
           dancers[i].setPosition(topVal, leftVal);
         }
         if(name.includes('blue-dancer')) {
-          var topVal = Math.floor(Math.random() * 50) + 50 + '%';
-          var leftVal = Math.floor(Math.random() * 60) + 40 + '%';
+          var topVal = Math.floor(Math.random() * 30) + 50 + '%';
+          var leftVal = Math.floor(Math.random() * 40) + 20 + '%';
           dancers[i].setPosition(topVal, leftVal);
         }
         if(name.includes('yellow-dancer')) {
