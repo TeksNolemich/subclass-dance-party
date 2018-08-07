@@ -4,8 +4,6 @@ $(document).ready(function() {
   $('.addDancerButton').on('click', function(event) {
 
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    
-
 
     var dancerMakerFunction = window[dancerMakerFunctionName];
 

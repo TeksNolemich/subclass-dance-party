@@ -12,6 +12,14 @@ describe('blinkyDancer', function() {
     expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
+  it('should have Top coordinate', function() {
+    expect(blinkyDancer.top).to.be.a('number');
+  });
+
+  it('should have a Left coordinate', function() {
+    expect(blinkyDancer.left).to.be.a('number');
+  });
+
   it('should have a step function that makes its node blink', function() {
     sinon.spy(blinkyDancer.$node, 'toggle');
     blinkyDancer.step();
